@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <h2>Registration Form</h2>
+        <p>Please fill out this form with the required information</p>
+        <fieldset>
+            <section>
+                <p>
+                    <label for="firstname">Enter your First Name:</label>
+                    <input name="Firstname" type="text" id="Firstname" required><br>
+                </p>
+                <p>
+                    <label for="lastname">Enter your Last Name:</label>
+                    <input type="Lastname" name="text" id="Lastname" required><br>
+                </p>
+                <p>
+                    <label for="email">Enter your Email:</label>
+                    <input type="email" name="email" id="email" required><br>
+                </p>
+                <p>
+                    <label for="new password">Create a new password:</label>
+                    <input type="password" name="password" id= "password" required><br>
+                </p>
+            </section>
+        </fieldset>
+        <fieldset>
+            <section>
+                <p>
+                    <input type="radio" name="account" id="personal account" required>
+                    <label for="personal account">Personal Account</label><br>
+                </p>
+                <p>
+                    <input type="radio" name="account" id="Business account" required>
+                    <label for="Business account">Business Account</label><br>
+                </p>
+                <p>
+                    <input type="checkbox" name="terms and condition" id="terms and condition" required>
+                    <label for="terms and condition">I accept the </label><a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                </p>
+            </section>
+        </fieldset>
+        <fieldset>
+            <section>
+                <p>
+                    <label for="profile picture">Upload a profile picture:</label>
+                    <input class="file-upload-input" type="file" onchange="readurl (this)" accept="image/"><br>
+                </p>
+                <p>
+                    <label for="age">Input your Age (years):</label>
+                    <input type="number" name="age" min="13" id="age" required>
+                </p>
+                <p>
+                    <label for="how did you hear abot us">How did you hear about us?:</label>
+                    <select>
+                        <option>(select one)</option>
+                        <option>free code camp news</option>
+                        <option>free code camp youtube channels</option>
+                        <option>free code camp forums</option>
+                        <option>others</option>
+                    </select><br>
+                </p>
+                <p>
+                    <label for="bio">Provide a bio:</label>
+                    <textarea id="bio" name="bio">i like coding on the beach...</textarea>
+                </p>
+            </section>
+        </fieldset>
+        <section>
+            <p>
+                <button type="submit">submit</button>
+            </p>
+
+        </section>
+               
+    </form>
+
+</body>
+</html>
